@@ -1,10 +1,34 @@
 <template>
   <nav>
+    <router-link to="/signup">SignUp</router-link> |
+    <router-link to="/login">Login</router-link> |
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!-- <router-link to="/about">About</router-link> -->
   </nav>
-  <router-view/>
+  <router-view />
 </template>
+
+<!-- <script>
+
+export default {
+  name: 'App',
+  // data() {
+  //   return {
+  //     private: false
+  //   }
+  // },
+  computed: {
+    isVisible( pathName ) {
+      const route = this.$router.options.routes.find(route => route.name === pathName );
+      console.log(route.meta.login);
+      return route.meta.login
+    }
+  }
+}
+
+
+
+</script> -->
 
 <style>
 #app {
